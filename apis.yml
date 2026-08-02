@@ -1,22 +1,82 @@
 aid: walker-and-co
 name: Walker & Co.
-description: Walker & Co. is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Walker & Company Brands is a health and beauty products company founded in 2013 by
+  Tristan Walker, best known for Bevel, an end-to-end shaving and grooming system designed
+  for people of color, and for the Form hair-care line. Backed by Andreessen Horowitz (a16z)
+  and others, the company was acquired by Procter & Gamble in 2018 and now operates as a
+  consumer brand whose direct-to-consumer storefront runs on Shopify at getbevel.com. It is
+  a consumer packaged goods company with no first-party developer API program; it was added
+  to the API Evangelist network as an a16z portfolio lead. This profile captures its real
+  public web surface (storefront, security.txt, well-known documents, P&G legal and
+  vulnerability-disclosure programs) rather than an API product.
 url: https://raw.githubusercontent.com/api-evangelist/walker-and-co/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://getbevel.com/cdn/shop/files/bevel-logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-industry: consumer-packaged-goods
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Consumer Packaged Goods
+- Health and Beauty
+- Personal Care
+- Grooming
+- Ecommerce
+- Direct to Consumer
+- Shopify
 apis: []
+common:
+- type: Website
+  url: https://getbevel.com/
+- type: Support
+  name: Bevel Help Center
+  url: https://help.getbevel.com/hc/en-us
+- type: PrivacyPolicy
+  name: P&G Privacy Policy
+  url: https://privacypolicy.pg.com/en-US/
+- type: TermsOfService
+  name: P&G Terms and Conditions
+  url: https://termsandconditions.pg.com/en-us/
+- type: WellKnown
+  name: Well-Known Documents
+  url: well-known/walker-and-co-well-known.yml
+- type: SecurityTxt
+  name: security.txt
+  url: well-known/walker-and-co-security.txt
+- type: VulnerabilityDisclosure
+  name: Vulnerability Disclosure
+  url: security/walker-and-co-vulnerability-disclosure.yml
+- type: Security
+  name: P&G Vulnerability Disclosure Program
+  url: https://vdp.pg.com
+- type: DomainSecurity
+  name: Domain Security Posture
+  url: security/walker-and-co-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

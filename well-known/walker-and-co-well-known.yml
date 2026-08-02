@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of https://getbevel.com/.well-known/*
+host: https://getbevel.com
+note: >-
+  getbevel.com is the Bevel direct-to-consumer storefront (Walker & Company Brands, a
+  Procter & Gamble company) running on Shopify. The openid-configuration and
+  oauth-authorization-server documents below are Shopify's platform Customer Account API
+  OIDC endpoints served on the storefront host (issuer https://shopify.com/...), not a
+  first-party Walker & Co API. The security.txt Contact points to P&G's vulnerability
+  disclosure program (https://vdp.pg.com).
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: walker-and-co-security.txt
+- path: /.well-known/openid-configuration
+  status: 200
+  file: walker-and-co-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: walker-and-co-oauth-authorization-server.json
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

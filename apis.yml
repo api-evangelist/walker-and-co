@@ -64,6 +64,11 @@ tags_raw:
 - Shopify
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/procter-and-gamble/
+  name: Procter & Gamble
+  x-relationship: acquired
+  x-evidence: "Backed by Andreessen Horowitz (a16z) and others, the company was acquired by Procter & Gamble in 2018 and now operates as a consumer brand whose direct-to-consumer storefront runs on Shopify at getbevel."
 - type: Website
   url: https://getbevel.com/
 - type: Support
